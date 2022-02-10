@@ -1,0 +1,224 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif, Helvetica;
+}
+
+div.container {
+    max-width: 100%;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+}
+
+div.container .form {
+    background-color: #EFEFEF;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+div.container .form input[type="text"] {
+    padding: 15px 30px;
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    max-width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+div.container .form input[type="submit"] {
+    padding: 15px 40px;
+    background-color: #FC0100;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    max-width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+div.container .form input:focus {
+    outline: none;
+}
+
+div.container div.tasks-area {
+    margin-top: 40px;
+    background-color: #EFEFEF;
+    padding: 40px;
+    align-items: center;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+div.container div.tasks-area div.task {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 15px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+div.container div.tasks-area div.task p {
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+div.container div.tasks-area div.done {
+    opacity: 0.7;
+}
+
+div.container div.tasks-area div.done p {
+    text-decoration: line-through;
+}
+
+div.container div.tasks-area div.task span.delete {
+    position: relative;
+    background-color: #F13D40;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+div.container div.tasks-area div.task span.delete i {
+    padding-right: 15px;
+    font-size: 14px;
+}
+
+div.container span.clear {
+    display: flex;
+    align-items: center;
+    margin: 40px auto 0;
+    background-color: #F13D40;
+    color: #fff;
+    -webkit-width: fit-content;
+    -ms-width: fit-content;
+    -o-width: fit-content;
+    -moz-width: fit-content;
+    width: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    box-shadow: rgb(0 0 0 / 9%) 0px 2px 1px, rgb(0 0 0 / 9%) 4px 5px 2px, rgb(0 0 0 / 9%) 2px 10px 4px, rgb(0 0 0 / 9%) 4px 1px 8px, rgb(0 0 0 / 9%) 17px 3px 16px;
+}
+
+div.container span.hide {
+    display: none;
+}
+
+div.container span.clear i {
+    padding-right: 20px;
+}
+
+@media (max-width: 991px) {
+    div.container .form input[type="text"] {
+        width: 70%;
+    }
+}
+
+@media (max-width: 767px) {
+    div.container .form input[type="text"] {
+        width: 60%;
+    }
+    div.container div.tasks-area div.task span.delete {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    div.container div.tasks-area div.task span.delete i {
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.container .form,
+    div.container div.tasks-area {
+        padding: 20px;
+    }
+    div.container div.tasks-area div.task {
+        padding: 30px;
+        text-align: center;
+    }
+    div.container div.tasks-area div.task p {
+        width: 100%;
+    }
+    div.container div.tasks-area div.task span {
+        margin-top: 30px;
+        width: 100%;
+        padding: 10px 20px;
+    }
+    div.container .form input[type="text"] {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        padding: 15px 20px;
+    }
+    div.container .form input[type="submit"] {
+        width: 100%;
+    }
+}
